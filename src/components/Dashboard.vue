@@ -203,7 +203,7 @@
             </div>
           </div>
           <div>
-            <p class="text-sm text-gray-600 mb-2">{{ clientesComVeiculos }} com veículos</p>
+            <!--<p class="text-sm text-gray-600 mb-2">{{ clientesComVeiculos }} com veículos</p>-->
             <div class="w-full bg-gray-200 rounded-full h-2">
               <div class="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full transition-all duration-500" :style="{ width: `${totalClientes > 0 ? (clientesComVeiculos / totalClientes) * 100 : 0}%` }"></div>
             </div>
@@ -225,7 +225,7 @@
             </div>
           </div>
           <div>
-            <p class="text-sm text-gray-600 mb-2">{{ servicosConcluidos }} concluídos</p>
+            <!--<p class="text-sm text-gray-600 mb-2">{{ servicosConcluidos }} concluídos</p>-->
             <div class="w-full bg-gray-200 rounded-full h-2">
               <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full transition-all duration-500" :style="{ width: `${totalServicos > 0 ? (servicosConcluidos / totalServicos) * 100 : 0}%` }"></div>
             </div>
