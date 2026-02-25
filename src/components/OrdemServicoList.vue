@@ -253,7 +253,7 @@
           <!-- Itens -->
           <div class="space-y-4">
             <div class="flex justify-between items-center">
-              <h4 class="text-md font-medium text-gray-700">Itens da O.S.</h4>
+              <!--<h4 class="text-md font-medium text-gray-700">Itens da O.S.</h4>-->
               <div class="space-x-2 no-print">
                 <button type="button" @click="showModalServico = true"
                   class="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
