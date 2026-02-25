@@ -1,0 +1,318 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "telefone": "(11) 98765-4321",
+      "email": "joao.silva@email.com"
+    },
+    {
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "telefone": "(11) 91234-5678",
+      "email": "maria.oliveira@email.com"
+    },
+    {
+      "id": 3,
+      "nome": "Carlos Santos",
+      "telefone": "(11) 97777-8888",
+      "email": "carlos.santos@email.com"
+    },
+    {
+      "id": 4,
+      "nome": "Ana Pereira",
+      "telefone": "(11) 96666-5555",
+      "email": "ana.pereira@email.com"
+    },
+    {
+      "id": 5,
+      "nome": "Roberto Almeida",
+      "telefone": "(11) 95555-4444",
+      "email": "roberto.almeida@email.com"
+    }
+  ],
+  "veiculos": [
+    {
+      "id": 1,
+      "clienteId": 1,
+      "placa": "ABC1234",
+      "modelo": "Honda Civic",
+      "ano": 2019
+    },
+    {
+      "id": 2,
+      "clienteId": 1,
+      "placa": "DEF5678",
+      "modelo": "Toyota Corolla",
+      "ano": 2021
+    },
+    {
+      "id": 3,
+      "clienteId": 2,
+      "placa": "GHI9012",
+      "modelo": "Volkswagen Gol",
+      "ano": 2018
+    },
+    {
+      "id": 4,
+      "clienteId": 3,
+      "placa": "JKL3456",
+      "modelo": "Fiat Uno",
+      "ano": 2015
+    },
+    {
+      "id": 5,
+      "clienteId": 4,
+      "placa": "MNO7890",
+      "modelo": "Chevrolet Onix",
+      "ano": 2022
+    }
+  ],
+  "servicos": [
+    {
+      "id": 1,
+      "veiculoId": 1,
+      "descricao": "Troca de óleo e filtros",
+      "data": "2023-04-10T10:30:00.000Z",
+      "valor": 150.00,
+      "status": "concluido"
+    },
+    {
+      "id": 2,
+      "veiculoId": 1,
+      "descricao": "Revisão de freios",
+      "data": "2023-05-15T14:00:00.000Z",
+      "valor": 280.00,
+      "status": "concluido"
+    },
+    {
+      "id": 3,
+      "veiculoId": 2,
+      "descricao": "Alinhamento e balanceamento",
+      "data": "2023-05-20T09:15:00.000Z",
+      "valor": 180.00,
+      "status": "em_andamento"
+    },
+    {
+      "id": 4,
+      "veiculoId": 3,
+      "descricao": "Troca de correia dentada",
+      "data": "2023-05-18T11:00:00.000Z",
+      "valor": 350.00,
+      "status": "pendente"
+    },
+    {
+      "id": 5,
+      "veiculoId": 4,
+      "descricao": "Reparo no sistema elétrico",
+      "data": "2023-05-05T13:45:00.000Z",
+      "valor": 420.00,
+      "status": "concluido"
+    }
+  ],
+  "pecas": [
+    {
+      "id": 1,
+      "codigo": "FLT001",
+      "nome": "Filtro de óleo",
+      "descricao": "Filtro de óleo para motores 1.0 a 2.0",
+      "precoUnitario": 35.90,
+      "quantidadeEstoque": 5,
+      "estoqueMinimo": 5,
+      "status": "disponivel"
+    },
+    {
+      "id": 2,
+      "codigo": "OLE002",
+      "nome": "Óleo de motor 5W30",
+      "descricao": "Óleo sintético para motores a gasolina/flex",
+      "precoUnitario": 45.50,
+      "quantidadeEstoque": 30,
+      "estoqueMinimo": 10,
+      "status": "disponivel"
+    },
+    {
+      "id": 3,
+      "codigo": "FRE003",
+      "nome": "Pastilha de freio dianteira",
+      "descricao": "Jogo de pastilhas para veículos de passeio",
+      "precoUnitario": 120.00,
+      "quantidadeEstoque": 8,
+      "estoqueMinimo": 4,
+      "status": "disponivel"
+    },
+    {
+      "id": 4,
+      "codigo": "COR004",
+      "nome": "Correia dentada",
+      "descricao": "Correia para motores 1.0 a 1.6",
+      "precoUnitario": 85.90,
+      "quantidadeEstoque": 10,
+      "estoqueMinimo": 5,
+      "status": "baixo_estoque"
+    },
+    {
+      "id": 5,
+      "codigo": "VEL005",
+      "nome": "Vela de ignição",
+      "descricao": "Jogo com 4 velas de ignição",
+      "precoUnitario": 65.80,
+      "quantidadeEstoque": 12,
+      "estoqueMinimo": 6,
+      "status": "disponivel"
+    },
+    {
+      "id": 6,
+      "codigo": "BAT006",
+      "nome": "Bateria 60Ah",
+      "descricao": "Bateria para veículos de passeio",
+      "precoUnitario": 320.00,
+      "quantidadeEstoque": 5,
+      "estoqueMinimo": 2,
+      "status": "indisponivel"
+    }
+  ],
+  "ordensServico": [
+    {
+      "id": 1,
+      "numero": "OS-2023-0001",
+      "veiculoId": 1,
+      "dataAbertura": "2023-04-10T08:00:00.000Z",
+      "dataFechamento": "2023-04-10T17:00:00.000Z",
+      "status": "concluida",
+      "observacoes": "Cliente relatou consumo elevado de combustível",
+      "valorTotal": 285.90,
+      "itens": [
+        {
+          "id": 1,
+          "ordemServicoId": 1,
+          "tipo": "servico",
+          "itemId": 1,
+          "quantidade": 1,
+          "valorUnitario": 150.00,
+          "subtotal": 150.00
+        },
+        {
+          "id": 2,
+          "ordemServicoId": 1,
+          "tipo": "peca",
+          "itemId": 1,
+          "quantidade": 1,
+          "valorUnitario": 35.90,
+          "subtotal": 35.90
+        },
+        {
+          "id": 3,
+          "ordemServicoId": 1,
+          "tipo": "peca",
+          "itemId": 2,
+          "quantidade": 2,
+          "valorUnitario": 45.50,
+          "subtotal": 91.00
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "numero": "OS-2023-0002",
+      "veiculoId": 1,
+      "dataAbertura": "2023-05-15T13:00:00.000Z",
+      "dataFechamento": "2023-05-15T18:00:00.000Z",
+      "status": "concluida",
+      "observacoes": "Cliente relatou barulho ao frear",
+      "valorTotal": 400.00,
+      "itens": [
+        {
+          "id": 4,
+          "ordemServicoId": 2,
+          "tipo": "servico",
+          "itemId": 2,
+          "quantidade": 1,
+          "valorUnitario": 280.00,
+          "subtotal": 280.00
+        },
+        {
+          "id": 5,
+          "ordemServicoId": 2,
+          "tipo": "peca",
+          "itemId": 3,
+          "quantidade": 1,
+          "valorUnitario": 120.00,
+          "subtotal": 120.00
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "numero": "OS-2023-0003",
+      "veiculoId": 2,
+      "dataAbertura": "2023-05-20T09:00:00.000Z",
+      "dataFechamento": null,
+      "status": "em_andamento",
+      "observacoes": "Cliente relatou vibração no volante",
+      "valorTotal": 180.00,
+      "itens": [
+        {
+          "id": 6,
+          "ordemServicoId": 3,
+          "tipo": "servico",
+          "itemId": 3,
+          "quantidade": 1,
+          "valorUnitario": 180.00,
+          "subtotal": 180.00
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "numero": "OS-2023-0004",
+      "veiculoId": 3,
+      "dataAbertura": "2023-05-18T10:30:00.000Z",
+      "dataFechamento": null,
+      "status": "aberta",
+      "observacoes": "Manutenção preventiva",
+      "valorTotal": 435.90,
+      "itens": [
+        {
+          "id": 7,
+          "ordemServicoId": 4,
+          "tipo": "servico",
+          "itemId": 4,
+          "quantidade": 1,
+          "valorUnitario": 350.00,
+          "subtotal": 350.00
+        },
+        {
+          "id": 8,
+          "ordemServicoId": 4,
+          "tipo": "peca",
+          "itemId": 4,
+          "quantidade": 1,
+          "valorUnitario": 85.90,
+          "subtotal": 85.90
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "numero": "OS-2023-0005",
+      "veiculoId": 4,
+      "dataAbertura": "2023-05-05T13:00:00.000Z",
+      "dataFechamento": "2023-05-06T10:00:00.000Z",
+      "status": "concluida",
+      "observacoes": "Veículo não ligava",
+      "valorTotal": 420.00,
+      "itens": [
+        {
+          "id": 9,
+          "ordemServicoId": 5,
+          "tipo": "servico",
+          "itemId": 5,
+          "quantidade": 1,
+          "valorUnitario": 420.00,
+          "subtotal": 420.00
+        }
+      ]
+    }
+  ]
+}
