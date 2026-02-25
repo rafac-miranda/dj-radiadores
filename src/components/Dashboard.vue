@@ -502,7 +502,6 @@ const servicos = ref<Servico[]>([]);
 const pecas = ref<Peca[]>([]);
 const dadosCarregados = ref(false);
 const fileInput = ref<HTMLInputElement | null>(null);
-const mostrarPrivacidade = ref(false);
 const mostrarGerenciamentoDados = ref(false);
 
 // Navegação
