@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/d&j-radiadores/",
+  base: "/dej-radiadores/",
   plugins: [vue()],
   server: {
     host: true,
